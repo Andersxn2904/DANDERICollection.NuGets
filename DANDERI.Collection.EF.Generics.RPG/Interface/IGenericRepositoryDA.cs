@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace DANDERI.Collection.EF.Generics.RPG.Interface
 {
-	public interface IGenericRepository<Entity, Context> where Entity : class where Context : DbContext
+	public interface IGenericRepositoryDA<Entity, Context> where Entity : class where Context : DbContext
 	{
 		Task<Entity> AddAsync(Entity entity);
 		Task UpdateAsync(Entity entity, int ID);

@@ -5,12 +5,12 @@ using System.Linq.Expressions;
 namespace DANDERI.Collection.EF.Generics.RPG.Repository
 {
 
-	public class GenericRepository<Entity, Context> : IGenericRepository<Entity,Context> where Entity : class
+	public class GenericRepositoryDA<Entity, Context> : IGenericRepositoryDA<Entity,Context> where Entity : class
 	where Context : DbContext
 	{
 		private readonly Context _dbContext;
 
-		public GenericRepository(Context dbContext)
+		public GenericRepositoryDA(Context dbContext)
 		{
 			_dbContext = dbContext;
 		}
