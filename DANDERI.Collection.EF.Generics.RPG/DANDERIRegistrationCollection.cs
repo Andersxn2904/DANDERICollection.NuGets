@@ -14,8 +14,8 @@ namespace DANDERI.Collection.EF.Generics.RPG
 
 
 			services.AddDbContext<Context>(options =>
-		    options.UseSqlServer(SqlServerConnetionString,
-		    m => m.MigrationsAssembly(typeof(Context).Assembly.FullName)));
+			options.UseSqlServer(SqlServerConnetionString,
+			m => m.MigrationsAssembly(typeof(Context).Assembly.FullName)));
 
 			#region Register Danderi Repository
 			services.AddTransient(typeof(IGenericRepository<,>), typeof(GenericRepository<,>));
