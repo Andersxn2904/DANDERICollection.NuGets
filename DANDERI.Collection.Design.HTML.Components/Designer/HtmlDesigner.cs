@@ -6,7 +6,7 @@ namespace DANDERI.Collection.Design.HTML.Components.Designer
 {
 	public class HtmlDesigner
 	{
-		public static string GetBtnEmail(EmailRequestDesign Email)
+		public static string GetBodyEmail(EmailRequestDesign Email)
 		{
 			StringBuilder EmailBuilder = new StringBuilder();
 			
@@ -50,9 +50,10 @@ namespace DANDERI.Collection.Design.HTML.Components.Designer
       <div class=""container"">");
 			EmailBuilder.Append(Email.H1Title != null ? $"<h1>{Email.H1Title}</h1>" : "");
 			EmailBuilder.Append(Email.PBody != null ? $" <p>{Email.PBody}</p>" : "");
-
-
-
+			EmailBuilder.Append(Email.Btn != null ? $@"<a href=""{Email.Btn.Url}"" class=""button"">{Email.Btn.Text}</a>" : "");
+            EmailBuilder.Append(@"</div> 
+                                    </body> 
+                                    </html>");
 
 			return EmailBuilder.ToString();
 		}
