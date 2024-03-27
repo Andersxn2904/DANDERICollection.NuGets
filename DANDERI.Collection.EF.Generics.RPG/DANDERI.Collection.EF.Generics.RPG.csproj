@@ -6,15 +6,16 @@
     <Nullable>enable</Nullable>
     <Title>DANDERI Generic Repository EF</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
-    <Company>Anderson Figuereo L.</Company>
+    <Version>1.0.1</Version>
+    <Company>Danderi</Company>
     <Description>An impletation of Generic Repository based on Entity Framework</Description>
     <RepositoryType>Git</RepositoryType>
     <RepositoryUrl>https://github.com/Andersxn2904/DANDERICollection.NuGets</RepositoryUrl>
     <PackageIcon>DanderiCollectionLogoV.0.0.1.png</PackageIcon>
     <PackageTags>Repository, GenericRepository,Generic Repository, Entity, Framework, Core, entity-framework-core, EF, Data, O/RM, EntityFramework, EntityFrameworkCore, EFCore</PackageTags>
-    <FileVersion>1.0.0</FileVersion>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <Authors>Anderson Figuereo L.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
