@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DANDERI.Collection.Design.HTML.Components.Designer
 {
-	public class HtmlDesigner
+	public class HtmlDesigner : IHtmlDesigner
 	{
 		public static string GetBodyEmail(EmailRequestDesign Email)
 		{
@@ -57,5 +57,7 @@ namespace DANDERI.Collection.Design.HTML.Components.Designer
 
 			return EmailBuilder.ToString();
 		}
+
+		
 	}
 }
